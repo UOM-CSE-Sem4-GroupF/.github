@@ -1,0 +1,388 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="19nNhgwzZklHaCYKiDAd">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <object placeholders="1" c4Name="Central Event Bus" c4Type="Container" c4Technology="e.g. Apache Kafka" c4Description="Description of message bus type container role/responsibility." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="RsptTOw-ZCbpN8X_XEi2-16">
+          <mxCell parent="1" style="shape=cylinder3;size=15;direction=south;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;fillColor=#23A2D9;fontSize=12;fontColor=#ffffff;align=center;strokeColor=#0E7DAD;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];resizable=0;" vertex="1">
+            <mxGeometry height="120" width="240" x="510" y="800" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-7" edge="1" parent="1" source="RsptTOw-ZCbpN8X_XEi2-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" target="CdLso-rl7Rpbfnwo1Jpd-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-60" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-30" connectable="0" parent="1FTwnLNKas3s0yMcDQ6P-7" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Notification socket.io" vertex="1">
+          <mxGeometry relative="1" x="-0.2119" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-8" edge="1" parent="1" source="RsptTOw-ZCbpN8X_XEi2-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.092;exitY=-0.002;exitDx=0;exitDy=0;exitPerimeter=0;" target="CdLso-rl7Rpbfnwo1Jpd-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-23" connectable="0" parent="1FTwnLNKas3s0yMcDQ6P-8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="View historical bin data /&lt;div&gt;current bin levels apis&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.1965" y="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Api Gateway" c4Type="Kong API gateway" c4Description="Used as the common interface for all the clients" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="RsptTOw-ZCbpN8X_XEi2-17">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
+            <mxGeometry height="120" width="240" x="320" y="525" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Flink Processor" c4Type="Software System" c4Description="Consumes raw Sensor Data , writes to databases and publish processed sensor data" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="RsptTOw-ZCbpN8X_XEi2-18">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#60a917;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#2D7600;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
+            <mxGeometry height="120" width="240" x="110" y="800" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="ESP32 sensor" c4Type="Software System" c4Description="Description of software system." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="RsptTOw-ZCbpN8X_XEi2-19">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#008a00;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#005700;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
+            <mxGeometry height="120" width="240" x="905" y="460" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Edge Gateway " c4Type="Node Red Buffer" c4Description="Description of software system." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="RsptTOw-ZCbpN8X_XEi2-20">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#008a00;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#005700;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
+            <mxGeometry height="120" width="240" x="905" y="650" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Edge layer" c4Type="SystemScopeBoundary" c4Application="F1 — edge &amp; device layer" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="RsptTOw-ZCbpN8X_XEi2-34">
+          <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;fillColor=none;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
+            <mxGeometry height="740" width="600" x="870" y="430" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="EMQX broker" c4Type="MQTT topic " c4Description="Description of software system." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="RsptTOw-ZCbpN8X_XEi2-35">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#008a00;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#005700;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
+            <mxGeometry height="120" width="240" x="900" y="830" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Leshan LwM2M" c4Type="device mngmt" c4Description="Description of software system." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="RsptTOw-ZCbpN8X_XEi2-36">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#008a00;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#005700;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
+            <mxGeometry height="120" width="240" x="905" y="990" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="CdLso-rl7Rpbfnwo1Jpd-1" edge="1" parent="1" source="RsptTOw-ZCbpN8X_XEi2-19" style="endArrow=classic;html=1;rounded=0;exitX=0.438;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1030" y="670" as="sourcePoint" />
+            <mxPoint x="1010" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CdLso-rl7Rpbfnwo1Jpd-3" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;exitX=0.438;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1010" y="765" as="sourcePoint" />
+            <mxPoint x="1010" y="835" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-15" connectable="0" parent="CdLso-rl7Rpbfnwo1Jpd-3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Publishes raw data to the MQTT topic" vertex="1">
+          <mxGeometry relative="1" x="-0.1543" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CdLso-rl7Rpbfnwo1Jpd-4" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0.573;entryY=-0.009;entryDx=0;entryDy=0;entryPerimeter=0;" target="RsptTOw-ZCbpN8X_XEi2-16" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="900" y="870" as="sourcePoint" />
+            <mxPoint x="630" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-5" connectable="0" parent="CdLso-rl7Rpbfnwo1Jpd-4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Publish raw sensor&lt;div&gt;data&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.169" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Dashboard" c4Type="Next js" c4Description="Description of external software system." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="CdLso-rl7Rpbfnwo1Jpd-5">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#736782;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
+            <mxGeometry height="120" width="240" x="-220" y="540" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="CdLso-rl7Rpbfnwo1Jpd-6" edge="1" parent="1" source="CdLso-rl7Rpbfnwo1Jpd-5" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.625;entryDx=0;entryDy=0;entryPerimeter=0;" target="RsptTOw-ZCbpN8X_XEi2-17" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="480" y="370" as="sourcePoint" />
+            <mxPoint x="310" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-6" connectable="0" parent="CdLso-rl7Rpbfnwo1Jpd-6" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="API and WS req&amp;nbsp;&lt;div&gt;from the FR&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.2262" y="-3" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="System" c4Type="SystemScopeBoundary" c4Application="Software System" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="CdLso-rl7Rpbfnwo1Jpd-7">
+          <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;fillColor=none;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
+            <mxGeometry height="410" width="1430" x="-270" y="-60" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Collection  Workflow Orchestrator" c4Type="Software System" c4Description="Description of software system." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="CdLso-rl7Rpbfnwo1Jpd-8">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#a20025;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#6F0000;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
+            <mxGeometry height="120" width="240" x="250" y="20" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Bin Status Service" c4Type="Software System" c4Description="Confirms bins status , view historical bin data , read from database" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="CdLso-rl7Rpbfnwo1Jpd-9">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#6a00ff;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#3700CC;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
+            <mxGeometry height="120" width="240" x="-90" y="180" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Scheduler Service" c4Type="Software System" c4Description="Scehdule Routine jobs , Handles urgent jobs" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="CdLso-rl7Rpbfnwo1Jpd-11">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#6a00ff;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#3700CC;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
+            <mxGeometry height="120" width="240" x="860" y="190" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Notification Service" c4Type="Software System" c4Description="Description of software system." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="CdLso-rl7Rpbfnwo1Jpd-12">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#6a00ff;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#3700CC;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
+            <mxGeometry height="120" width="240" x="580" y="180" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="CdLso-rl7Rpbfnwo1Jpd-19" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="330" y="920" as="sourcePoint" />
+            <mxPoint x="670" y="1120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-1" connectable="0" parent="CdLso-rl7Rpbfnwo1Jpd-19" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Writes&amp;nbsp; raw and processed&lt;div&gt;sesnor data&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.3054" y="-5" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CdLso-rl7Rpbfnwo1Jpd-20" edge="1" parent="1" source="RsptTOw-ZCbpN8X_XEi2-16" style="endArrow=classic;html=1;rounded=0;exitX=0.294;exitY=0.989;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;entryPerimeter=0;" target="RsptTOw-ZCbpN8X_XEi2-18" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="380" y="840" as="sourcePoint" />
+            <mxPoint x="430" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-2" connectable="0" parent="CdLso-rl7Rpbfnwo1Jpd-20" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Comsumes from the&lt;div&gt;raw sensor topics&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.0336" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Fast API ML Service" c4Type="Software System" c4Description="Waste generation trend prediction" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="CdLso-rl7Rpbfnwo1Jpd-23">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#60a917;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#2D7600;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
+            <mxGeometry height="120" width="240" x="-220" y="790" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="CdLso-rl7Rpbfnwo1Jpd-25" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="Postgress" vertex="1">
+          <mxGeometry height="120" width="120" x="670" y="1030" as="geometry" />
+        </mxCell>
+        <mxCell id="CdLso-rl7Rpbfnwo1Jpd-26" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="Influx database" vertex="1">
+          <mxGeometry height="110" width="110" x="690" y="1160" as="geometry" />
+        </mxCell>
+        <object placeholders="1" c4Name="Databse " c4Type="ContainerScopeBoundary" c4Application="Container" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="CdLso-rl7Rpbfnwo1Jpd-27">
+          <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;fillColor=none;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
+            <mxGeometry height="405" width="243" x="600" y="950" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Apache Air flow" c4Type="Software System" c4Description="Description of software system." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="CdLso-rl7Rpbfnwo1Jpd-30">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#60a917;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#2D7600;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
+            <mxGeometry height="120" width="240" y="1010" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-28" edge="1" parent="1" source="CdLso-rl7Rpbfnwo1Jpd-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-90" y="910" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-29" connectable="0" parent="1FTwnLNKas3s0yMcDQ6P-28" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Send data for training" vertex="1">
+          <mxGeometry relative="1" x="-0.0148" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Apache Spark" c4Type="Software System" c4Description="Process large batches of data" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="CdLso-rl7Rpbfnwo1Jpd-31">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#60a917;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#2D7600;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
+            <mxGeometry height="120" width="240" x="-440" y="1010" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Data Analysis" c4Type="SystemScopeBoundary" c4Application="Software System" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="CdLso-rl7Rpbfnwo1Jpd-34">
+          <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;fillColor=none;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
+            <mxGeometry height="540" width="1060" x="-480" y="580" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-3" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0.583;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" target="RsptTOw-ZCbpN8X_XEi2-16" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="350" y="870" as="sourcePoint" />
+            <mxPoint x="500" y="890" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-4" connectable="0" parent="1FTwnLNKas3s0yMcDQ6P-3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Publish processed&lt;div&gt;sensor data&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.3054" y="-5" as="geometry">
+            <mxPoint x="25" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-9" edge="1" parent="1" source="CdLso-rl7Rpbfnwo1Jpd-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.405;entryY=0.045;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" target="CdLso-rl7Rpbfnwo1Jpd-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="150" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-33" connectable="0" parent="1FTwnLNKas3s0yMcDQ6P-9" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Send notification to the driver" vertex="1">
+          <mxGeometry relative="1" x="-0.5095" y="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-10" edge="1" parent="1" source="CdLso-rl7Rpbfnwo1Jpd-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=-0.017;exitY=0.346;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.578;entryY=0.026;entryDx=0;entryDy=0;entryPerimeter=0;" target="CdLso-rl7Rpbfnwo1Jpd-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-11" edge="1" parent="1" source="CdLso-rl7Rpbfnwo1Jpd-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.654;entryY=0.022;entryDx=0;entryDy=0;entryPerimeter=0;" target="CdLso-rl7Rpbfnwo1Jpd-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-34" connectable="0" parent="1FTwnLNKas3s0yMcDQ6P-11" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Schedules the job" vertex="1">
+          <mxGeometry relative="1" x="-0.2885" y="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-31" edge="1" parent="1" source="1FTwnLNKas3s0yMcDQ6P-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.458;entryDx=0;entryDy=0;entryPerimeter=0;" target="RsptTOw-ZCbpN8X_XEi2-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-480" y="680" />
+              <mxPoint x="640" y="680" />
+            </Array>
+            <mxPoint x="160" y="730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-32" connectable="0" parent="1FTwnLNKas3s0yMcDQ6P-31" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Consume the route creation job" vertex="1">
+          <mxGeometry relative="1" x="-0.516" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="OR Tools Route Optimizer" c4Type="Software System" c4Description="Create Routes based on the bin locations" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="1FTwnLNKas3s0yMcDQ6P-14">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#60a917;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#2D7600;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
+            <mxGeometry height="120" width="240" x="-540" y="790" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-16" edge="1" parent="1" source="CdLso-rl7Rpbfnwo1Jpd-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=75;entryPerimeter=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" target="CdLso-rl7Rpbfnwo1Jpd-26">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="1130" />
+              <mxPoint x="160" y="720" />
+              <mxPoint x="652" y="720" />
+            </Array>
+            <mxPoint x="190" y="1140" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-17" connectable="0" parent="1FTwnLNKas3s0yMcDQ6P-16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Get batches or raw data for training ml model" vertex="1">
+          <mxGeometry relative="1" x="-0.4773" y="5" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-18" edge="1" parent="1" source="CdLso-rl7Rpbfnwo1Jpd-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="CdLso-rl7Rpbfnwo1Jpd-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-27" connectable="0" parent="1FTwnLNKas3s0yMcDQ6P-18" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Schedule Batches&lt;div&gt;of data&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.1487" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-20" edge="1" parent="1" source="RsptTOw-ZCbpN8X_XEi2-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="CdLso-rl7Rpbfnwo1Jpd-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-42" connectable="0" parent="1FTwnLNKas3s0yMcDQ6P-20" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="View Upcoming Waste Generation Patterns" vertex="1">
+          <mxGeometry relative="1" x="0.2867" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="GPS data " c4Type="Software System" c4Description="Flutter App publishes to the mqtt topic" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="1FTwnLNKas3s0yMcDQ6P-21">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#008a00;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#005700;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
+            <mxGeometry height="120" width="240" x="1220" y="650" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-22" edge="1" parent="1" source="1FTwnLNKas3s0yMcDQ6P-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="RsptTOw-ZCbpN8X_XEi2-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-24" edge="1" parent="1" source="CdLso-rl7Rpbfnwo1Jpd-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;entryPerimeter=0;" target="RsptTOw-ZCbpN8X_XEi2-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-25" edge="1" parent="1" source="CdLso-rl7Rpbfnwo1Jpd-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;entryPerimeter=0;" target="RsptTOw-ZCbpN8X_XEi2-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="240" />
+              <mxPoint x="200" y="330" />
+              <mxPoint x="600" y="330" />
+              <mxPoint x="600" y="780" />
+              <mxPoint x="570" y="780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-26" connectable="0" parent="1FTwnLNKas3s0yMcDQ6P-25" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Consumes processed&amp;nbsp;&lt;div&gt;sesnor data&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.2812" y="-4" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-35" edge="1" parent="1" source="CdLso-rl7Rpbfnwo1Jpd-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.113;entryY=0.113;entryDx=0;entryDy=0;entryPerimeter=0;" target="RsptTOw-ZCbpN8X_XEi2-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="510" />
+              <mxPoint x="723" y="510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-36" connectable="0" parent="1FTwnLNKas3s0yMcDQ6P-35" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Publish a Job for the routes for the bin" vertex="1">
+          <mxGeometry relative="1" x="-0.8183" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-37" edge="1" parent="1" source="1FTwnLNKas3s0yMcDQ6P-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;entryPerimeter=0;" target="RsptTOw-ZCbpN8X_XEi2-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-38" connectable="0" parent="1FTwnLNKas3s0yMcDQ6P-37" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="publish the route" vertex="1">
+          <mxGeometry relative="1" x="-0.7563" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-39" edge="1" parent="1" source="CdLso-rl7Rpbfnwo1Jpd-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.323;entryY=-0.008;entryDx=0;entryDy=0;entryPerimeter=0;" target="RsptTOw-ZCbpN8X_XEi2-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="920" y="360" />
+              <mxPoint x="810" y="360" />
+              <mxPoint x="810" y="839" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-40" connectable="0" parent="1FTwnLNKas3s0yMcDQ6P-39" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Consumes the route" vertex="1">
+          <mxGeometry relative="1" x="-0.3492" y="-3" as="geometry">
+            <mxPoint x="20" y="-26" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Flutter App" c4Type="Next js" c4Description="Driver to view the route and send gps" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="1FTwnLNKas3s0yMcDQ6P-43">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#736782;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
+            <mxGeometry height="120" width="240" x="-220" y="405" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-44" edge="1" parent="1" source="1FTwnLNKas3s0yMcDQ6P-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;entryPerimeter=0;" target="RsptTOw-ZCbpN8X_XEi2-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-45" connectable="0" parent="1FTwnLNKas3s0yMcDQ6P-44" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="View the route /&lt;div&gt;receive notification&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.5327" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-46" edge="1" parent="1" source="CdLso-rl7Rpbfnwo1Jpd-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=82.5;entryPerimeter=0;" target="CdLso-rl7Rpbfnwo1Jpd-25">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="50" y="880" />
+              <mxPoint x="50" y="960" />
+              <mxPoint x="330" y="960" />
+              <mxPoint x="330" y="1273" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-47" connectable="0" parent="1FTwnLNKas3s0yMcDQ6P-46" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Generation trends" vertex="1">
+          <mxGeometry relative="1" x="-0.5693" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-48" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="CdLso-rl7Rpbfnwo1Jpd-25">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-460" y="1220" />
+              <mxPoint x="650" y="1220" />
+              <mxPoint x="650" y="1090" />
+            </Array>
+            <mxPoint x="-460" y="920" as="sourcePoint" />
+            <mxPoint x="650" y="1230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1FTwnLNKas3s0yMcDQ6P-50" connectable="0" parent="1FTwnLNKas3s0yMcDQ6P-48" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Bin Locatons/ Vehicle data" vertex="1">
+          <mxGeometry relative="1" x="-0.0062" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
